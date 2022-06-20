@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trigger !!</title>
+  <script src="//cdn.jsdelivr.net/npm/@triggerjs/trigger" defer></script>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: 0;
+    }
+    h1{
+      margin: 100vh 0;
+      text-align: center;
+      font-size: 3rem;
+      opacity: var(--opacity);
+    }
+    main{
+      background-color: #333;
+      margin: 100vh 0;
+      padding: 50vh 0;
+    }
+    #container{
+      width: 90%;
+      max-width: 600px;
+      font-size: 2rem;
+      letter-spacing: -1.5px;
+      margin: auto;
+    }
+    span{
+      color: #fff;
+      --color: .3;
+      opacity: var(--color);
+    }
+  </style>
+</head>
+<body>
+  <h1 tg-name="opacity">Trigger</h1>
+  <main>
+    <div id="container" tg-ref="container" tg-name="color" tg-from="1" tg-to="10" tg-step="1">
+      <span tg-follow="container" tg-name="color" tg-filter="3!" tg-map="3: 1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit voluptate aperiam neque laborum sunt maxime, dolor veniam doloremque obcaecati fugit architecto laboriosam quam incidunt eius placeat ullam maiores sapiente.</span>
+      <span tg-follow="container" tg-name="color" tg-filter="4!" tg-map="4: 1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos praesentium excepturi tenetur cupiditate aperiam officia, illum harum molestiae adipisci quibusdam accusantium qui voluptas enim at aspernatur nemo nulla et doloremque.</span>
+      <span tg-follow="container" tg-name="color" tg-filter="5!" tg-map="5: 1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, excepturi debitis. Aut quibusdam neque esse ut tenetur nisi nam rem eligendi nemo obcaecati provident ipsum cum recusandae quam, cumque cupiditate.</span>
+      <span tg-follow="container" tg-name="color" tg-filter="6!" tg-map="6: 1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta necessitatibus nobis inventore ratione debitis iure? Dolore quo ex, reiciendis quia, labore itaque necessitatibus voluptatum at impedit repellat quidem aspernatur.</span>
+      <span tg-follow="container" tg-name="color" tg-filter="7!" tg-map="7: 1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam quisquam libero optio maxime aperiam eligendi odio, quasi distinctio ratione amet ex placeat accusamus dolorum, natus consequuntur facere ut voluptas!</span>
+    </div>
+  </main>
+</body>
+</html>
